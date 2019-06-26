@@ -9,6 +9,7 @@ public static class Savebehaviour
         BinaryFormatter formatter = new BinaryFormatter();
 
         string path = Application.persistentDataPath + "/player.fun";
+        Debug.Log(path);
         FileStream stream = new FileStream(path, FileMode.Create);
 
         PlayerData data = new PlayerData(player);
